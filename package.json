@@ -12,11 +12,13 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-top-loading-bar": "^2.0.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^3.1.0"
+    
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "--legacy-peer-deps": "npm install @react-navigation/stack@next --legacy-peer-deps",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
